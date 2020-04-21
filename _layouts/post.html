@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1 class="post-title">{{ page.title }}</h1>
+{% if page.header-image %}
+<img class="header-image" src="{{ page.header-image | relative_url }}" alt="{{ page.title }}">
+{% endif %}
+{% if page.subtitle %}
+<div class="subtitle-container">
+<h2 class="subtitle">{{ page.subtitle }}</h2><h2 class="subtitle-date">{{ page.date | date_to_string: "ordinal", "US"}}</h2>
+{% endif %}
+</div>
+
+<article>        
+{{ content }}
+</article>
+        
+{% if site.disqus-id %} {% include comments.html %} {% endif %}

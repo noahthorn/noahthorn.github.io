@@ -1,0 +1,7 @@
+body.phlog { color: #ffffff; animation-name: phlog-background; animation-duration: 2s; background-color: #000; }
+@keyframes phlog-background { from { background-color: #ffffff; }
+  to { background-color: #000; } }
+body.phlog header, body.phlog header a { animation-name: phlog-header-text; animation-duration: 2s; color: #ffffff; }
+@keyframes phlog-header-text { from { color: #000; }
+  to { color: #ffffff; } }
+div.phlog { display: grid; min-height: 95vh; }
