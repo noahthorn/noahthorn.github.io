@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-<h1 class="fiction-post-title">{{ page.title | upcase }}</h1>
 {% if page.header-image %}
-<img class="fiction-header-image" src="{{ page.header-image | relative_url }}" alt="{{ page.title }}">
+<img class="header-image fiction-header-image" src="{{ page.header-image | relative_url }}" alt="{{ page.title }}">
 {% endif %}
 
 <article class="fiction">        

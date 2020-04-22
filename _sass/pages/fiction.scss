@@ -1,8 +1,20 @@
-h1.fiction-post-title {
-	text-align: left;
-	font-style: italic;
+img.fiction-header-image {
+	margin-top: 1em;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
 article.fiction {
-	
+	//Typography
+	font-family: 'Inter', sans-serif;
+	strong {
+		font-size: 1.2em;
+	}
+
+	//Rule
+	hr {
+		width: 80px;
+		text-align: center;
+		border: 1px solid;
+	}
 }

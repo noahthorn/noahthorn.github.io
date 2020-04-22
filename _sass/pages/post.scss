@@ -2,7 +2,8 @@
 
 @media (max-width: 768px){
 	img.header-image {
-		display: none;
+		max-width: 100%;
+		width: auto;
 	}
 }
 

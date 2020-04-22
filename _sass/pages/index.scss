@@ -6,9 +6,24 @@ section.posts {
 		margin-left: 0;
 		li {
 			display: grid;
-			grid-template-columns: auto auto;
+			grid-template-columns: auto 140px;
 			time {
 				text-align: right;
+			}
+		}
+
+		li.fiction {
+			//Fiction link hover
+			@keyframes fiction-link-hover {
+				from {background-color: #ffffff; color: #000;}
+				to {background-color: #ff30cb; color: #ffffff;}
+			}
+
+			a.fiction:hover, a.fiction:active {
+				animation-name: fiction-link-hover;
+				animation-duration: 1s;
+				background-color: #ff30cb;
+				color: #ffffff;
 			}
 		}
 	}
