@@ -9,6 +9,7 @@ section.posts {
 			grid-template-columns: auto 140px;
 			time {
 				text-align: right;
+				color: $grey;
 			}
 		}
 
@@ -24,6 +25,23 @@ section.posts {
 				animation-duration: 1s;
 				background-color: #ff30cb;
 				color: #ffffff;
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint-tablet) {
+	section.posts{
+		ul {
+			li {
+				display: grid;
+				grid-template-columns: auto;
+				text-align: center;
+				margin-bottom: .5em;
+				time{
+					text-align: center;
+					color: $grey;
+				}
 			}
 		}
 	}

@@ -10,10 +10,13 @@
 $content-width: 960px;
 $header-height: 80px;
 $font-stack: 'Oxygen', 'Verdana', sans-serif;
-$accent-color: #ff30cb;
 $font-size: 18px;
 
 $breakpoint-tablet: 768px;
+
+// Colors
+$accent-color: #ff30cb;
+$grey: #C1C1C1;
 
 // Container
 * {
@@ -50,13 +53,13 @@ body {
 
 	@keyframes link-hover {
 		from {background-color: #ffffff; color: #000;}
-		to {background-color: #C1C1C1; color: #ffffff;}
+		to {background-color: $grey; color: #ffffff;}
 	}
 
 	a:hover, a:active {
 		animation-name: link-hover;
 		animation-duration: 1s;
-		background-color: #C1C1C1;
+		background-color: $grey;
 		color: #ffffff;
 	}
 
@@ -66,12 +69,12 @@ body {
 		}
 		@keyframes post-link-hover {
 			from {background-color: #ffffff; color: $accent-color;}
-			to {background-color: #C1C1C1; color: #ffffff;}
+			to {background-color: $grey; color: #ffffff;}
 		}
 		a:hover, a:active {
 			animation-name: post-link-hover;
 			animation-duration: 1s;
-			background-color: #C1C1C1;
+			background-color: $grey;
 			color: #ffffff;
 		}
 	}
@@ -81,5 +84,5 @@ body {
 	}
 
 	.subtitle, .subtitle-date {
-		color: #C1C1C1;
+		color: $grey;
 	}
