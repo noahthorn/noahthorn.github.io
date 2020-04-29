@@ -1,8 +1,13 @@
 // Subtitle
 
-@media (max-width: 768px){
+@media (max-width: $breakpoint){
 	img.header-image {
 		max-width: 100%;
+		width: auto;
+	}
+
+	article p img {
+		max-width: 95vw;
 		width: auto;
 	}
 }

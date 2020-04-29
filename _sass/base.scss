@@ -12,7 +12,7 @@ $header-height: 80px;
 $font-stack: 'Oxygen', 'Verdana', sans-serif;
 $font-size: 18px;
 
-$breakpoint-tablet: 960px;
+$breakpoint: 960px;
 
 // Colors
 $accent-color: #ff30cb;
@@ -32,7 +32,7 @@ body {
 	color: #000;
 	margin: 0 auto;
 }
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint) {
 	body {
 		max-width: 95vw;
 	}
