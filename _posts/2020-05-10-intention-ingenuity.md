@@ -2,6 +2,7 @@
 title: Intentionality
 subtitle: Paradoxes in the process
 categories: [blog]
+layout: post
 header-image: /assets/img/blog/intention-ingenuity/header.jpg
 ---
 
