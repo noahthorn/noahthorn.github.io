@@ -1,19 +1,27 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: Try Cypress
 layout: default
 ---
 
 <section class="posts">
 	<ul>
-		{% for post in site.posts %}
-		{% if post.layout == 'fiction' %}
-		<li class="fiction"><a class="fiction" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string: "ordinal", "US" }}</time></li>
-		{% else %}
-		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string: "ordinal", "US" }}</time></li>
+	<p style="text-align: center;">Blog</p>
+	{% for category in site.categories %}
+		{% if category[0] == "blog" %}
+			{% for post in category[1] %}
+				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string: "ordinal", "US" }}</time></li>
+			{% endfor %}
+			{% endif %}
+	{% endfor %}
+	</ul>
+	<ul class="fiction">
+	<p style="text-align: center;">Fiction</p>
+	{% for category in site.categories %}
+		{% if category[0] == "fiction" %}
+			{% for post in category[1] %}
+				<li class="fiction"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string: "ordinal", "US" }}</time><a class="fiction" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
 		{% endif %}
-		{% endfor %}
+	{% endfor %}
 	</ul>
 </section>

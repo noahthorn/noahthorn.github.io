@@ -1,5 +1,8 @@
 section.posts {
-	max-width: (3/4)*960px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(262px, 1fr));
+	grid-gap: 40px;
+	max-width: (4/5)*960px;
 	margin: 0 auto;
 	ul {
 		list-style-type: none;
@@ -7,6 +10,7 @@ section.posts {
 		li {
 			display: grid;
 			grid-template-columns: auto 140px;
+			margin-bottom: .5em;
 			time {
 				text-align: right;
 				color: $grey;
@@ -14,10 +18,14 @@ section.posts {
 		}
 
 		li.fiction {
+			grid-template-columns: 140px auto;
 			//Fiction link hover
 			@keyframes fiction-link-hover {
 				from {background-color: #ffffff; color: #000;}
 				to {background-color: #ff30cb; color: #ffffff;}
+			}
+			a {
+				text-align: right;
 			}
 
 			a.fiction:hover, a.fiction:active {
@@ -26,11 +34,21 @@ section.posts {
 				background-color: #ff30cb;
 				color: #ffffff;
 			}
+			time {
+				text-align: left;
+				color: $grey;
+			}
 		}
 	}
 }
 
 @media (max-width: $breakpoint) {
+	section.posts{
+		max-width: 95%;
+	}
+}
+
+/* @media (max-width: $breakpoint) {
 	section.posts{
 		ul {
 			li {
@@ -38,11 +56,24 @@ section.posts {
 				grid-template-columns: auto;
 				text-align: center;
 				margin-bottom: .5em;
-				time{
+				time {
+					text-align: center;
+					color: $grey;
+				}
+			}
+			li.fiction {
+				display: grid;
+				grid-template-columns: auto;
+				text-align: center;
+				margin-bottom: .5em;
+				a {
+					text-align: center;
+				}
+				time {
 					text-align: center;
 					color: $grey;
 				}
 			}
 		}
 	}
-}
+} */
