@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://trycypress.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: trycypress
 github_username:  noahthorn
+staticman_url: https://ntstaticman.herokuapp.com/v2/entry/noahthorn/noahthorn.github.io/master/comments
 
 # Build settings
 # theme:
