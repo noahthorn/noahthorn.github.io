@@ -1,5 +1,4 @@
 ---
-title: Try Cypress
 layout: default
 ---
 

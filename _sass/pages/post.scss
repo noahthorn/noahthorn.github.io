@@ -12,6 +12,12 @@
 	}
 }
 
+img.header-image {
+	max-height: 80px;
+	object-fit: cover;
+	width: 100%
+}
+
 div.subtitle-container {
 	display: grid;
 	grid-template-columns: auto auto;

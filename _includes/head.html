@@ -10,7 +10,19 @@
 		{{ site.title }} &mdash; {{ site.description }}
 		{% endif %}
 	</title>
-	<link rel="shortcut icon" type:"image/png" href={{ "/favicon.png" | relative_url }}>
-	<link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
-	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+	{% if page.title %}
+	<meta content="{{ page.title }}" property="og:title">
+	<meta content="article" property="og:type">
+	<meta content="{{ site.url }}/{{ page.header-image }}" property="og:image">
+	{% else %}
+	<meta content="{{ site.title }} &mdash; {{ site.description }}" property="og:title">
+	<meta content="website" property="og:type">
+	<meta content="{{ site.url }}/assets/img/blog/kath/towers.jpg" property="og:image">
+	{% endif %}
+	{% if page.url %}
+	<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+	{% endif %}
+	<link rel="shortcut icon" type="image/png" href={{ "/favicon.png" | relative_url }}>
+	<link rel="stylesheet" href={{ "/assets/css/normalize.css" | relative_url }}>
+	<link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url }}>
 </head>
