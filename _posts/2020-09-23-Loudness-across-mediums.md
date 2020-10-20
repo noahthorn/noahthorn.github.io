@@ -2,6 +2,7 @@
 title: Loudness across mediums
 subtitle: A potential exit through -12dBfs
 categories: [blog]
+header-image: /assets/img/blog/loudness/header.jpg
 ---
 
 Fleet Foxes surprise release, *Shore*, contains neither surprise nor disappointment. It is a Fleet Foxes record, naturally extending the vast, reverbed expanses that's defined their sound and continuing the subtle experiments of their last two records. Continuing in a strict sense of the word, mind you — they feel like repeated experiments.
