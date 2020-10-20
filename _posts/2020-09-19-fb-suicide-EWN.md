@@ -2,6 +2,7 @@
 title: Edges without Nodes -> FB Suicide
 subtitle: Good content
 categories: [blog, edges without nodes]
+header-image: /assets/img/blog/suicide/header.jpg
 ---
 
 How do we hear about suicides?
