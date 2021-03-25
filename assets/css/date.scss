@@ -1,0 +1,53 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+body.date-me {
+    background-color: black;
+    color: #fff;
+    header a {
+        color: #fff;
+    }
+}
+
+main.date-me-content {
+    h1 {
+        text-align: center;
+    }
+    h1, h2, h3 {
+        font-family: 'Inter', sans-serif;
+    }
+    div {
+        margin: 3rem 0;
+        div {
+            margin: 0;
+        }
+    }
+    .image-container {
+        margin: 0 auto;
+        max-width: 400px;
+        img {
+            max-width: inherit;
+            height: auto;
+        }
+    }
+    .wide-image-container {
+        margin: 0 auto;
+        max-width: 960px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    div#six {
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 1rem 3rem;
+        background-color: #ff30cb;
+        color: #000;
+        border-radius: 1rem;
+        filter: sepia(50%);
+    }
+}
