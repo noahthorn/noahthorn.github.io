@@ -88,6 +88,10 @@ body {
 			background-color: $grey;
 			color: #ffffff;
 		}
+		img {
+			max-width: 960px;
+			height: auto;
+		}
 	}
 
 	h1.post-title {
