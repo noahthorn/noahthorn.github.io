@@ -1,7 +1,7 @@
 ---
 title: The Demiurgic Limit
 subtitle: A common unconception
-header-image: /assets/img/blog/2022-07-02/header.jpeg
+header-image: /assets/img/blog/2022-07-02/header.jpg
 ---
 Having finally received spousal access to the Princeton University Library, I've been able to borrow a copy of Peter Wright's "Attending Daedalus," one of the only pieces of secondary literature on Wolfe's corpus. Last I checked, a hardcover copy is $500 and a paperback (of which there must be exceedingly few) is $6k. It contains an interpretation of Wolfe's most famous work, the tetralogy (plus coda) *The Book of the New Sun*, the content of which we will get to shortly. It is an academic work, full of frameworks of interpretation and hefty textual support, from the work in question and beyond, in Wolfe's short stories and essays.
 
